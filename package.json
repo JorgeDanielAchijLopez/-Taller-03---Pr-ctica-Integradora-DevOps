@@ -5,6 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "test": "jest",
+    "build": "node --check src/app.js && node --check src/demo.js && node --check config/config.js",
     "start": "node src/demo.js"
   },
   "devDependencies": {
