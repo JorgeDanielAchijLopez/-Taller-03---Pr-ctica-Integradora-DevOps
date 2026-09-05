@@ -1,5 +1,8 @@
 function calcularTotal(precio, cantidad) {
-    // TODO: agregar validación de precios negativos
+    if (precio < 0) {
+        throw new Error("El precio no puede ser negativo");
+    }
+
     return precio * cantidad;
 }
 
